@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: rgba(18, 13, 38, 1);
+}
+/* header start */
+header{
+    padding: 0 calc(10vw + 14px);
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    font-size: calc(4.2vw - 12px); 
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #FF7058;
+}
+section{
+    padding: 0 calc(10vw + 14px);
+    margin-bottom: calc(6.1vw + 2.1px);
+}
+.header_menu_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 639px;
+}
+.header_menu{
+    display: flex;
+    gap: 50px;
+}
+.header_menu li{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #94959A;
+    cursor: pointer;
+}
+.header_btn_wrapper{
+    display: flex;
+    gap: 30px;
+    
+}
+.header_menu li {
+    position: relative;
+}
+
+.header_menu li::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: #ff6f61; /* Цвет подчеркивания */
+    transition: width 0.3s ease;
+}
+
+.header_menu li:hover::after {
+    width: 100%;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; /* Устанавливаем z-index, чтобы header был поверх других элементов */
+    background-color: #fff; /* Задаем цвет фона, чтобы header был виден */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Добавляем небольшую тень, чтобы выделить header */
+}
+.black{
+    background-color: #222;
+    color: #fff;
+    cursor: pointer;
+    padding: 12px 43px;
+    border-radius: 6px;
+    border: 3px solid #222;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    transition: .3s;
+}
+.white{
+    background-color: #fff;
+    color: #222;
+    border: 3px solid #fff;
+    cursor: pointer;
+    padding: 12px 16px;
+    border-radius: 6px;
+    transition: .3s;
+}
+.black:hover{
+    color: #222;
+    background-color: white;
+}
+.white:hover{
+    border: 3px solid #222;
+}
+/* header end */
+
+
+/* Section1 start */
+.section1{
+    background-image: url(./img/YogaTeamBG.png);
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.section1_text{
+    padding: 295px 0 197px;
+    max-width: 585px;
+}
+.section1_text h1{
+    font-size: calc(2.9vw + 10px);
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    padding-bottom: 34px;
+}
+.section1_text p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color: #94959A;
+    margin-bottom: 58px;
+}
+.section1_wrapper_btn{
+    display: flex;
+    gap: 0 27px;
+    align-items: center;
+}
+.section1_text button{
+    gap: 0 27px;
+    background-color: #FF7058;
+    color: #fff;
+    padding: 12px 56px 12px 48px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 14px;
+}
+
+.orange{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #FF7058;   
+}
+
+.section1_img {
+    width: calc(14.6vw + 320px);
+    padding-top: 180px;
+}
+
+.section1_img img{
+    width: 100%;
+}
+/* section1 end */
+
+/* section3 start */
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    margin: 69px 80px;
+}
+.blockend {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.blockend h5{
+font-size: 24px;
+font-weight: 600;
+line-height: 150%;
+letter-spacing: 0em;
+}
+
+.blockend h6{
+font-size: 18px;
+font-weight: 600;
+line-height: 150%;
+letter-spacing: 0.01em;
+color: #FF7058;
+}
+
+.globalarrow h5 {
+font-size: 18px;
+font-weight: 500;
+line-height: 150%;
+letter-spacing: 0.01em;
+}
+
+.yogicom {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 80px;
+    border-top: 2px solid #120d26;
+    padding-top: 40px;
+}
+
+.yogicom h5 {
+font-size: 18px;
+font-weight: 600;
+line-height: 150%;
+letter-spacing: 0.01em;
+color: #120D26;
+}
+
+.yogicom .miniimg {
+    display: flex;
+    gap: 26px;
+}
+
+/* section3 end */
+
+/* section two start */
+
+.section2 {
+    background: #FF70580D;
+}
+
+.section2 h1 {
+font-size: 40px;
+font-weight: 700;
+line-height: 150%;
+letter-spacing: 0.02em;
+text-align: center;
+padding: 60px 0 72px 0;
+}
+
+.blocks__container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 72px;
+}
+
+.threeblocks {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 15px;
+    width:400px;
+    height:666px;
+    padding: 21px, 25px, 21px, 25px
+}
+
+.text__block {
+    padding: 25px;
+}
+
+.text__block h3 {
+font-size: 36px;
+font-weight: 600;
+line-height: 150%;
+letter-spacing: 0em;
+padding-bottom: 12px;
+}
+
+.text__block p {
+font-size: 20px;
+font-weight: 500;
+line-height: 150%;
+letter-spacing: 0em;
+color: #3C3E56;
+padding-bottom: 80px;
+}
+
+.text__block span {
+font-size: 16px;
+font-weight: 500;
+line-height: 150%;
+letter-spacing: 0em;
+color: #94959A;
+}
+
+.threeblocks img {
+    padding: 25px;
+}
+
+/* section two end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 975px) {
+    header{
+        padding-top:10px ;
+        padding-bottom:10px ;
+
+    }
+    .section1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .header_menu_wrapper {
+        display: none;
+    }
+    .section1_text {
+        padding: 150px 0 0;
+    }
+    .section1_img{
+        padding-right: 50px;
+        padding-top: 0;
+    }
+    .logo {
+        font-size: 35px;
+    }
+    .section1_wrapper_btn {
+        margin-bottom: 25px;
+    }
+    .section1 p {
+        margin-bottom: 25px;
+    }
+    .brands {
+        display: flex;
+        flex-direction: column;
+    }
+    .section2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .blocks__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .threeblocks p {
+        padding-bottom: 30px;
+    }
+    .textwithborder{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       text-align: center;
+    }
+    .section2 img {
+        padding: 20px;
+    }
+    .section2 h3 {
+        text-align: center;
+        margin-top: 25px;
+    }
+    .orange_block8 h3 {
+        padding: 50px 50px;
+    }
+    .orange_block8 p {
+        padding: 0px 50px;
+        padding-bottom: 50px;
+    }
+   .header_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+   }
+   .yogicom h5 {
+    font-size: 12px;
+   }
+   .yogicom .miniimg {
+    gap: 5px;
+   }
+    
+}
+
+
+@media (max-width: 1600px){
+    .one, .two{
+        align-self: auto;
+    }
+    .section4{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
